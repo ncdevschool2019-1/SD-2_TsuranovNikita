@@ -1,0 +1,61 @@
+.project__info {
+  text-align: center;
+  margin: 2%;
+}
+
+.search {
+  display: flex;
+  margin: 2%;
+}
+.search__input {
+  width: 80%;
+}
+.search__button {
+  width: 16%;
+  margin: 0 2%
+}
+
+.task__col {
+  margin: 1% auto;
+  background-color: rgb(235, 235, 250);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.task__col__name {
+  margin: 15px 0;
+  text-align: center;
+  color: rgb(50, 50, 90);
+}
+.task {
+ margin: 7px 0;
+ background-color: rgb(250, 250, 250);
+ border-radius: 0 0 10px 10px;
+ padding: 10px;
+ box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+.task__topic {
+  color: rgb(70, 70, 110);
+}
+.task__description, .task__priority, .task__assignee, .task__labels {
+  font-size: 0.8em;
+  margin-bottom: 5px;
+  color: rgb(130, 130, 150);
+}
+.task__dates {
+  display: flex;
+  flex-direction: row;
+}
+.task__date { 
+  margin: 0 auto;
+  text-align: center;
+  font-size: calc(0.3em + 40%);
+  color: rgba(70, 70, 110, 0.5);
+}
+
+.task__addbutton {
+  width: 100%;
+  margin-bottom: 5px;
+  border: none;
+  background: none;
+  color: rgb(70, 70, 110);
+  font-weight: bolder;
+}

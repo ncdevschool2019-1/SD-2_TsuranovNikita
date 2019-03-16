@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>
+    Main Page
+  </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <div class="container-fluid">
+    <h1 class="project__info">Project Name #projectcode</h1>
+    <form class="search">
+        <input type="text" class="form-control search__input" placeholder="Search...">
+        <button type="submit" class="btn btn-default search__button">Submit</button>
+    </form>
+    <div class="row">
+        <div class="task__col col-md-2">
+          <h6 class="task__col__name">Open</h6>
+
+          <div class="task container-fluid">
+            <h6 class="task__topic">Task1</h6>
+            <div class="task__description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore, deleniti!</div>
+            <div class="task__priority">Priority: normal</div>
+            <div class="task__assignee">Assignee: Nikita Tsuranov</div>
+            <div class="task__labels">Labels: <b class="label">Lorem ipsum dolor</b></div>
+            <div class="task__dates row">
+              <b class="task__date open col">open date</br>21.01.2000</b>
+              <b class="task__date due col">due date</br>18.08.2020</b>
+            </div>
+          </div>
+          <div class="task container-fluid">
+            <h6 class="task__topic">Task1</h6>
+            <div class="task__description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore, deleniti!</div>
+            <div class="task__priority">Priority: normal</div>
+            <div class="task__assignee">Assignee: Nikita Tsuranov</div>
+            <div class="task__dates row">
+              <b class="task__date open col">open date</br>21.01.2000</b>
+              <b class="task__date due col">due date</br>18.08.2020</b>
+            </div>
+          </div>
+
+          <button class="task__addbutton">+</button>
+        </div>
+        <div class="task__col col-md-2">
+            <h6 class="task__col__name">In Progress</h6>
+            <button class="task__addbutton">+</button>
+        </div>
+        <div class="task__col col-md-2">
+            <h6 class="task__col__name">Resolved</h6>
+            <button class="task__addbutton">+</button>
+        </div>
+        <div class="task__col col-md-2">
+            <h6 class="task__col__name">Ready for Test</h6>
+            <button class="task__addbutton">+</button>
+        </div>
+        <div class="task__col col-md-2">
+            <h6 class="task__col__name">Closed</h6>
+            <button class="task__addbutton">+</button>
+        </div>
+    </div>
+  </div>
+</body>
+</html>
