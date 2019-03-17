@@ -21,7 +21,7 @@
         <div class="task__col col-md-2">
           <h6 class="task__col__name">Open</h6>
 
-          <div class="task container-fluid">
+          <div class="task container-fluid" data-toggle="modal" data-target="#task__form">
             <h6 class="task__topic">Task1</h6>
             <div class="task__description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore, deleniti!</div>
             <div class="task__priority">Priority: normal</div>
@@ -42,8 +42,100 @@
               <b class="task__date due col">due date</br>18.08.2020</b>
             </div>
           </div>
+          
 
-          <button class="task__addbutton">+</button>
+          <div class="modal" tabindex="-1" id="task__form" style="width: 80%; height: 80%; margin: 5% 10%">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">Task topic #taskcode</h5>
+                <button type="button" class="close" data-dismiss="modal">x</button>
+              </div>
+
+              <div class="modal-body">
+                <div class="row">
+                  <div class=col-md-9>
+                    <h6>Description:</h6>
+                    <p style="text-align: justify">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis sunt quisquam, soluta utasperiores nam harum tenetur quaerat debitis dolores.
+                    </p>
+                    <h6>Labels:</h6>
+                    <p>
+                      Lorem ipsum dolor sit amet
+                    </p>
+                    <div class="comments">
+                        <h6 class="title-comments">Comments:</h6>
+                        <ul class="media-list">
+                          <li class="media">
+                            <p>Author1</p>
+                            <p>: comment1</p>
+                          </li>
+                          <li class="media">
+                            <p>Author2</p>
+                            <p>: comment2</p>
+                          </li>
+                        </ul>
+                        <div class="form-group" style="display: flex">
+                          <textarea class="form-control" id="add-comment" style="height: 2.5em"></textarea>
+                          <button type="submit" class="btn">Add</button>
+                        </div>
+                      </div>
+                  </div>
+                  <div class=col-md-3>
+                    <label style="width: 100%"><b style="font-weight: 600">Priority:</b> normal</label>
+                    <label style="width: 100%"><b style="font-weight: 600">Status:</b> open</label>
+                    <label style="width: 100%"><b style="font-weight: 600">Reporter:</b> SomeBody</label>
+                    <label style="width: 100%"><b style="font-weight: 600">Assignee:</b> SomeBody</label>
+                    <label style="width: 100%"><b style="font-weight: 600">Estimation:</b> 40</label>
+                    <label style="width: 100%"><b style="font-weight: 600">Created:</b> 12.03.2019</label>
+                    <label style="width: 100%"><b style="font-weight: 600">Updated:</b> 12.03.2019</label>
+                    <label style="width: 100%"><b style="font-weight: 600">Due date:</b> 19.03.2019</label>
+                  </div>
+                </div>
+              </div>
+                
+              <div class="modal-footer">
+                <button type="button" class="btn" style="width: 100%">Next stage</button>
+              </div>
+            </div>
+          </div>
+
+          <button type="button" class="btn task__addbutton" data-toggle="modal" data-target="#add__task__form">+</button>
+
+          <div class="modal" tabindex="-1" id="add__task__form" style="width: 80%; height: 80%; margin: 5% 10%">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">Add task</h5>
+                <button type="button" class="close" data-dismiss="modal">x</button>
+              </div>
+              <div class="modal-body">
+                <div class="form-group">
+                  <label class="form-control-label">Task topic:</label>
+                  <textarea class="form-control" id="add-task-topic" style="height: 2.5em"></textarea>
+                </div>
+                <div class="form-group">
+                  <label class="form-control-label">Description:</label>
+                  <textarea class="form-control" id="add-task-description" style="height: 5em"></textarea>
+                </div>
+                <div class="form-group">
+                  <label class="form-control-label">Due date:</label>
+                  <textarea class="form-control" id="add-task-due-date" style="height: 2.5em"></textarea>
+                </div>
+                <div class="form-group">
+                  <label class="form-control-label">Estimation:</label>
+                  <textarea class="form-control" id="add-task-estimation" style="height: 2.5em"></textarea>
+                </div>
+                <div class="form-group">
+                  <label class="form-control-label">Assignee:</label>
+                  <textarea class="form-control" id="add-task-assignee" style="height: 2.5em"></textarea>
+                </div>
+              </div>
+              
+              <div class="modal-footer">
+                <button type="button" class="btn" style="width: 100%">Add</button>
+              </div>
+            </div>
+          </div>
+
         </div>
         <div class="task__col col-md-2">
             <h6 class="task__col__name">In Progress</h6>
@@ -63,5 +155,9 @@
         </div>
     </div>
   </div>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
 </html>
