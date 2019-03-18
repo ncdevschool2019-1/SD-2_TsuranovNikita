@@ -8,16 +8,17 @@
   margin: 2%;
 }
 .search__input {
-  width: 80%;
+  width: 72%;
 }
 .search__button {
-  width: 16%;
-  margin: 0 2%
+  width: 24%;
+  margin: 0 2%;
+  border: solid 1px rgb(200, 200, 200);
 }
 
 .task__col {
   margin: 1% auto;
-  background-color: rgb(235, 235, 250);
+  background-color: rgb(245, 245, 255);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 .task__col__name {
@@ -51,11 +52,17 @@
   color: rgba(70, 70, 110, 0.5);
 }
 
-.task__addbutton {
+.task__addbutton, .project__addbutton, .user__addbutton {
   width: 100%;
   margin-bottom: 5px;
   border: none;
   background: none;
-  color: rgb(70, 70, 110);
+  color: rgb(0, 0, 30);
   font-weight: bolder;
+}
+
+.project-item {
+  font-size: 1.5em;
+  color: rgb(130, 130, 150);
+  margin: 20px 3%;
 }
