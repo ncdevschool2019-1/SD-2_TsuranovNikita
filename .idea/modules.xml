@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/NetCracker.iml" filepath="$PROJECT_DIR$/.idea/NetCracker.iml" />
+      <module fileurl="file://$PROJECT_DIR$/be/backend.iml" filepath="$PROJECT_DIR$/be/backend.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/ethalon.iml" filepath="$PROJECT_DIR$/.idea/ethalon.iml" />
+      <module fileurl="file://$PROJECT_DIR$/fapi/fapi.iml" filepath="$PROJECT_DIR$/fapi/fapi.iml" />
     </modules>
   </component>
 </project>
